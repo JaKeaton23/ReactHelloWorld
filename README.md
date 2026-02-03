@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+React Hello World — Assignment 1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Full Stack Development
 
-## Available Scripts
+Author: Jayden Keaton
+Course: Full Stack Development
+Assignment: Hello World (React Fundamentals)
 
-In the project directory, you can run:
+📌 Project Description
 
-### `npm start`
+This project is my first React application for the Full Stack Development course.
+The purpose of the assignment is to demonstrate:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Basic React project setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Custom JSX output (beyond the default template)
 
-### `npm test`
+Proper dependency management
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Local development workflow
 
-### `npm run build`
+(Optional) Docker containerization
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clear technical documentation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The application renders a personalized Hello World message identifying the author and assignment.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🖥️ Application Output
 
-### `npm run eject`
+The application displays:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Author name
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Assignment title
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Course context
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+A clean, styled UI using inline React styles
 
-## Learn More
+📂 Project Structure
+ReactHelloWorld/
+├── Dockerfile
+├── README.md
+├── package.json
+├── package-lock.json
+├── public/
+│   └── index.html
+└── src/
+    ├── App.js
+    └── index.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📦 Dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project relies on the following core dependencies:
 
-### Code Splitting
+Runtime Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+React – UI library
 
-### Analyzing the Bundle Size
+React DOM – DOM rendering for React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Development Dependencies
 
-### Making a Progressive Web App
+react-scripts – Build tooling and development server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Node.js – JavaScript runtime
 
-### Advanced Configuration
+npm – Package manager
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+All dependencies are defined in package.json.
 
-### Deployment
+🧰 System Requirements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Ensure the following are installed on your machine:
 
-### `npm run build` fails to minify
+Node.js (v18 or later recommended)
+Verify with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+node -v
+
+
+npm (comes with Node.js)
+Verify with:
+
+npm -v
+
+
+Git (for cloning and version control)
+
+Docker Desktop (optional, for containerized deployment)
+
+⬇️ Installation Instructions
+1. Clone the Repository
+git clone https://github.com/JaKeaton23/ReactHelloWorld.git
+cd ReactHelloWorld
+
+2. Install Dependencies
+npm install
+
+
+This installs all required packages listed in package.json.
+
+▶️ Running the Application (Local Development)
+
+Start the React development server:
+
+npm start
+
+
+The application will run at:
+http://localhost:3000
+
+Hot reloading is enabled — changes to App.js update automatically.
+
+🐳 Running the Application with Docker (Optional)
+
+The Docker setup builds a production-ready React app and serves it using Nginx.
+
+Build the Docker Image
+docker build -t react-hello-world .
+
+Run the Docker Container
+docker run --rm -p 8080:80 react-hello-world
+
+
+Open in browser:
+http://localhost:8080
+
+🛠️ Scripts Overview
+
+Available npm scripts:
+
+Command	Description
+npm start	Runs the app in development mode
+npm run build	Builds the app for production
+npm test	Runs tests (default CRA setup)
