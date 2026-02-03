@@ -6,7 +6,7 @@ Author: Jayden Keaton
 Course: Full Stack Development
 Assignment: Hello World (React Fundamentals)
 
-📌 Project Description
+ Project Description
 
 This project is my first React application for the Full Stack Development course.
 The purpose of the assignment is to demonstrate:
@@ -25,7 +25,7 @@ Clear technical documentation
 
 The application renders a personalized Hello World message identifying the author and assignment.
 
-🖥️ Application Output
+ Application Output
 
 The application displays:
 
@@ -37,7 +37,7 @@ Course context
 
 A clean, styled UI using inline React styles
 
-📂 Project Structure
+ Project Structure
 ReactHelloWorld/
 ├── Dockerfile
 ├── README.md
@@ -49,7 +49,7 @@ ReactHelloWorld/
     ├── App.js
     └── index.js
 
-📦 Dependencies
+ Dependencies
 
 This project relies on the following core dependencies:
 
@@ -69,7 +69,7 @@ npm – Package manager
 
 All dependencies are defined in package.json.
 
-🧰 System Requirements
+ System Requirements
 
 Ensure the following are installed on your machine:
 
@@ -89,7 +89,7 @@ Git (for cloning and version control)
 
 Docker Desktop (optional, for containerized deployment)
 
-⬇️ Installation Instructions
+Installation Instructions
 1. Clone the Repository
 git clone https://github.com/JaKeaton23/ReactHelloWorld.git
 cd ReactHelloWorld
@@ -100,7 +100,7 @@ npm install
 
 This installs all required packages listed in package.json.
 
-▶️ Running the Application (Local Development)
+ Running the Application (Local Development)
 
 Start the React development server:
 
@@ -112,7 +112,7 @@ http://localhost:3000
 
 Hot reloading is enabled — changes to App.js update automatically.
 
-🐳 Running the Application with Docker (Optional)
+Running the Application with Docker (Optional)
 
 The Docker setup builds a production-ready React app and serves it using Nginx.
 
@@ -126,7 +126,7 @@ docker run --rm -p 8080:80 react-hello-world
 Open in browser:
 http://localhost:8080
 
-🛠️ Scripts Overview
+ Scripts Overview
 
 Available npm scripts:
 
